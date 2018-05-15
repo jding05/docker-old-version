@@ -1,6 +1,6 @@
-********************
-* how_to_docker 03 *
-********************
+# *******************
+#  how_to_docker 03 *
+# *******************
 
 # 3. Define the variables needed by your virtual machine Char in the general env of 
 #   your terminal, so that you can run the docker ps command without errors. 
@@ -15,3 +15,4 @@ eval $(docker-machine env Char)
 #       to disconnect, you run " eval $(docker-machine env -u) "
 #       to see if you actaully connect docker through your terminal, run: " docker ps "
 #       -- write the command in the terminal to test if this work.
+#       // or run "source 03"

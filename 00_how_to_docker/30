@@ -1,6 +1,6 @@
-********************
-* how_to_docker 30 *
-********************
+# *******************
+#  how_to_docker 30 *
+# *******************
 
 # 30. Increase the number of copies of the marines service up to twenty, because there’s 
 #   never enough Marines to eliminate Zergs. (Remember to take a look at the tasks and logs 

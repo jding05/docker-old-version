@@ -1,6 +1,6 @@
-********************
-* how_to_docker 31 *
-********************
+# *******************
+#  how_to_docker 31 *
+# *******************
 
 # 31. Force quit and delete all the services on the local swarm, in one command.
 

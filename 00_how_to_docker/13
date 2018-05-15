@@ -1,6 +1,6 @@
-********************
-* how_to_docker 13 *
-********************
+# *******************
+#  how_to_docker 13 *
+# *******************
 
 # 13. Print the environment variables of the spawning-pool container in 
 #   one command, to be sure that you have configured your container properly.

@@ -1,6 +1,6 @@
-********************
-* how_to_docker 24 *
-********************
+# *******************
+#  how_to_docker 24 *
+# *******************
 
 # 24. Launch a rabbitmq SERVICE that will be named orbital-command. You should define a 
 #   specific user and password for the RabbitMQ service, they can be whatever you want. 

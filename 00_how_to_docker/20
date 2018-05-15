@@ -1,6 +1,6 @@
-********************
-* how_to_docker 20 *
-********************
+# *******************
+#  how_to_docker 20 *
+# *******************
 
 # 20. Create a local swarm, the Char virtual machine should be its manager.
 

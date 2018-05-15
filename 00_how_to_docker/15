@@ -1,6 +1,6 @@
-********************
-* how_to_docker 15 *
-********************
+# *******************
+#  how_to_docker 15 *
+# *******************
 
 # 15. Launch a phpmyadmin container as a background task. It should be named 
 #   roach-warden, its 80 port should be bound to the 8081 port of the 

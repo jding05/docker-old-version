@@ -1,6 +1,6 @@
-********************
-* how_to_docker 26 *
-********************
+# *******************
+#  how_to_docker 26 *
+# *******************
 
 # 26. Launch a 42school/engineering-bay service in two replicas and make sure that the service 
 #   works properly (see the documentation provided at hub.docker.com). This service will be 

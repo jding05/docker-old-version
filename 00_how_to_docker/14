@@ -1,6 +1,6 @@
-********************
-* how_to_docker 14 *
-********************
+# *******************
+#  how_to_docker 14 *
+# *******************
 
 # 14. Launch a wordpress container as a background task, just for fun. 
 #   The container should be named lair, its 80 port should be bound to 

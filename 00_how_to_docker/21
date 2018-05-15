@@ -1,6 +1,6 @@
-********************
-* how_to_docker 21 *
-********************
+# *******************
+#  how_to_docker 21 *
+# *******************
 
 # 21. Create another virtual machine with docker-machine using the 
 #   virtualbox driver, and name it Aiur.

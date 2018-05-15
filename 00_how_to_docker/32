@@ -1,6 +1,6 @@
-********************
-* how_to_docker 32 *
-********************
+# *******************
+#  how_to_docker 32 *
+# *******************
 
 # 32. Force quit and delete all the containers (whatever their status), in one command.
 

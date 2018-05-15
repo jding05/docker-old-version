@@ -1,6 +1,6 @@
-********************
-* how_to_docker 08 *
-********************
+# *******************
+#  how_to_docker 08 *
+# *******************
 
 # 8. Launch a shell from an alpine container, and make sure that you can interact 
 #   directly with the container via your terminal, and that the container deletes 

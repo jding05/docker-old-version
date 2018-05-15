@@ -1,6 +1,6 @@
-********************
-* how_to_docker 19 *
-********************
+# *******************
+#  how_to_docker 19 *
+# *******************
 
 # 19. Launch a container name Abathur. It will be a Python container, 
 #   2-slim version, its /root folder will be bound to a HOME folder on your host, 

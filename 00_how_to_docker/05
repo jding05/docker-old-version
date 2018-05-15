@@ -1,6 +1,6 @@
-********************
-* how_to_docker 05 *
-********************
+# *******************
+#  how_to_docker 05 *
+# *******************
 
 # 5. Launch the hello-world container, and make sure that it prints its welcome 
 #       message, then leaves it.
