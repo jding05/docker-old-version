@@ -1,6 +1,6 @@
-* ******************
-* dockerfiles ex02 *
-* ******************
+# ******************
+# dockerfiles ex02 *
+# ******************
 
 # ex02. You are going to create your first Dockerfile to containerize Rails applications. 
 #   That’s a special configuration: this particular Dockerfile will be generic, and called in 

@@ -1,6 +1,6 @@
-* ******************
-* dockerfiles ex01 *
-* ******************
+#  ******************
+#  dockerfiles ex01 *
+#  ******************
 
 # ex01.  From a debian image you will add the appropriate sources to create a TeamSpeak 
 #   server, that will launch along with your container. It will be deemed valid if 
