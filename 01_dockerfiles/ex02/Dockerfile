@@ -37,6 +37,9 @@ RUN gem install bundler && bundle install
 
 # to test 
 # " docker build -t ft-rails:on-build . "
+# you need to install rails
+# " rails new app"
+# inside the app folder, create the Dockerfile_child, and build inside the app folder
 # " docker build -t app -f Dockerfile_child . "
 # " docker run -it -p 3000:3000 app "
 # docker-machine ip Char
