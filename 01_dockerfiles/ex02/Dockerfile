@@ -24,10 +24,10 @@ RUN gem install rails
 # create rails application path
 # RUN mkdir /opt/app
 
-COPY ./app /opt
+ONBUILD COPY ./app /opt
 
 # Add the application to the application path.
-WORKDIR   /opt/app
+ONBUILD WORKDIR   /opt/app
 #ONBUILD ADD       . /opt/app
 
 
