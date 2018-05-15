@@ -1,0 +1,20 @@
+********************
+* how_to_docker 23 *
+********************
+
+# 23. Create an overlay-type internal network that you will name overmind
+
+docker network create --internal --driver overlay overmind
+
+
+
+# note: 
+# ----------------------------------------------------------------------------
+# 
+# The overlay network driver creates a distributed network among multiple Docker
+#   daemon hosts. This network sits on top of (overlays) the host-specific networks 
+#   allows containers connected to it (including swarm service containers) to 
+#   communicate securely.
+
+# docker_gwbridge created when we init the swarm network, 
+# ingress created when we created the swarm too.

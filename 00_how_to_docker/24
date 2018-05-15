@@ -1,0 +1,29 @@
+********************
+* how_to_docker 24 *
+********************
+
+# 24. Launch a rabbitmq SERVICE that will be named orbital-command. You should define a 
+#   specific user and password for the RabbitMQ service, they can be whatever you want. 
+#   This service will be on the overmind network.
+
+
+docker service create \
+--name orbital-command \
+--network overmind \
+--env RABBITMQ_DEFAULT_USER=sding \
+--env RABBITMQ_DEFAULT_PASS=password rabbitmq
+
+
+# note: 
+# ----------------------------------------------------------------------------
+# 
+# RabbitMQ is an implementation of AMQP, the emerging standard for high performance enterprise 
+#   messaging. The RabbitMQ server is a robust and scalable implementation of an AMQP broker.
+
+# To deploy an application image when Docker Engine is in swarm mode, you create a service.
+
+# RabbitMQ is a message-queueing software called a message broker or queue manager. 
+#   Simply said; It is a software where queues can be defined, applications may connect 
+#   to the queue and transfer a message onto it.
+
+# daemon --> background.

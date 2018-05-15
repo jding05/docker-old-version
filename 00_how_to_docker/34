@@ -1,0 +1,7 @@
+********************
+* how_to_docker 34 *
+********************
+
+# 34. Delete the Aiur virtual machine without using rm -rf.
+
+docker-machine rm -y Aiur

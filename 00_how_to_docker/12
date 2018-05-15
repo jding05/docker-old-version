@@ -1,0 +1,25 @@
+********************
+* how_to_docker 12 *
+********************
+
+# 12. Launch a mysql container as a background task. It should be able to restart on 
+#       its own in case of error, and the root password of the database should be 
+#       Kerrigan. You will also make sure that the database is stored in the hatchery 
+#       volume, that the container directly creates a database named zerglings, 
+#       and that the container itself is named spawning-pool.
+
+
+docker run -d --name spawning-pool --restart=on-failure -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings -v hatchery:/var/lib/mysql mysql
+
+# ----------------------------------------------------------------------------
+
+# note: 
+# ----------------------------------------------------------------------------
+#   command -v : -v=[]: Create a bind mount with: [host-dir:]container-dir[:rw|ro].
+#       If 'host-dir' is missing, then docker creates a new volume.
+#       If neither 'rw' or 'ro' is specified then the volume is mounted
+#       in read-write mode.
+#   In the case of bind mounts, the first field is the path to the file or directory on the host machine.
+#   The second field is the path where the file or directory is mounted in the container.
+#   
+#   command -e : setting the environment

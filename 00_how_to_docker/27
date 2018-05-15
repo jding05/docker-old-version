@@ -1,0 +1,7 @@
+********************
+* how_to_docker 27 *
+********************
+
+# 27. Get the real-time logs of one the tasks of the engineering-bay service.
+
+docker service logs -f "$(docker service ps -f name=engineering-bay.1 engineering-bay -q)"

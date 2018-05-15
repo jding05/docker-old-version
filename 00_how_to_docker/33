@@ -1,0 +1,11 @@
+********************
+* how_to_docker 33 *
+********************
+
+# 33. Delete all the container images stored on the Char virtual machine, 
+#       in one command as well.
+
+docker rmi $(docker images --all --quiet)
+
+
+# note: docker images -a --> to see all the images

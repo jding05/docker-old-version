@@ -1,0 +1,26 @@
+********************
+* how_to_docker 13 *
+********************
+
+# 13. Print the environment variables of the spawning-pool container in 
+#   one command, to be sure that you have configured your container properly.
+
+docker exec spawning-pool env
+
+
+
+# note: docker exec container env --> to view all environment variables
+
+# --------------------------------------------------------------------------------
+
+# Output:
+# --------------------------------------------------------------------------------
+#
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# HOSTNAME=ddc0236db51a
+# MYSQL_ROOT_PASSWORD=Kerrigan
+# MYSQL_DATABASE=zerglings
+# GOSU_VERSION=1.7
+# MYSQL_MAJOR=8.0
+# MYSQL_VERSION=8.0.11-1debian9
+# HOME=/root

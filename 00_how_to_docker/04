@@ -1,0 +1,26 @@
+********************
+* how_to_docker 04 *
+********************
+
+# 4. Get the hello-world container from the Docker Hub, where it’s available.
+
+docker pull hello-world
+
+
+# ------------------------------------------------------------------------------------
+
+# note: Docker Hub is like Github
+#       Detail: Docker Hub is a cloud-based registry service which allows you to link 
+#               to code repositories, build your images and test them, stores manually 
+#               pushed images, and links to Docker Cloud so you can deploy images to your hosts
+# 
+#
+
+# Output:
+# ----------------------------------------------------------------------------------
+# 
+# Using default tag: latest
+# latest: Pulling from library/hello-world
+# 9bb5a5d4561a: Pull complete
+# Digest: sha256:f5233545e43561214ca4891fd1157e1c3c563316ed8e237750d59bde73361e77
+# Status: Downloaded newer image for hello-world:latest

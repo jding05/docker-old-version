@@ -1,0 +1,19 @@
+********************
+* how_to_docker 08 *
+********************
+
+# 8. Launch a shell from an alpine container, and make sure that you can interact 
+#   directly with the container via your terminal, and that the container deletes 
+#   itself once the shell’s execution is done.
+
+docker run --rm -it alpine /bin/sh
+
+
+# ----------------------------------------------------------------------------
+
+# note: 
+# ----------------------------------------------------------------------------
+#   -i -> interact (not closing)
+#   -t -> tty, allocate a psuedo-TTY
+#   shell -> is like a terminal 
+#   to leave command : " exit "

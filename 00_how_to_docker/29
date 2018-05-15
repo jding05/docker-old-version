@@ -1,0 +1,7 @@
+********************
+* how_to_docker 29 *
+********************
+
+# 29. Display all the tasks of the marines service.
+
+docker service ps marines

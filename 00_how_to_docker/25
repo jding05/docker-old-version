@@ -1,0 +1,7 @@
+********************
+* how_to_docker 25 *
+********************
+
+# 25. List all the services of the local swarm.
+
+docker service ls

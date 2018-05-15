@@ -1,0 +1,37 @@
+********************
+* how_to_docker 32 *
+********************
+
+# 32. Force quit and delete all the containers (whatever their status), in one command.
+
+docker rm --force $(docker ps --all --quiet)
+
+
+
+# if the command without -q " docker rm --force $(docker ps --all) "
+# Output will be :
+# ----------------------------------------------------------------------------------
+# 
+# roach-warden
+# Error: No such container: CONTAINER
+# Error: No such container: ID
+# Error: No such container: IMAGE
+# Error: No such container: COMMAND
+# Error: No such container: CREATED
+# Error: No such container: STATUS
+# Error: No such container: PORTS
+# Error: No such container: NAMES
+# Error: No such container: 926b32ae22b5
+# Error: No such container: phpmyadmin/phpmyadmin
+# Error: No such container: "/run.sh
+# Error: No such container: phpmyadmin"
+# Error: No such container: 34
+# Error: No such container: hours
+# Error: No such container: ago
+# Error: No such container: Exited
+# Error: No such container: (255)
+# Error: No such container: 23
+# Error: No such container: hours
+# Error: No such container: ago
+# Error: No such container: 9000/tcp,
+# Error: No such container: 0.0.0.0:8081->80/tcp

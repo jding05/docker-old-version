@@ -1,0 +1,9 @@
+********************
+* how_to_docker 17 *
+********************
+
+# 17. Display all the currently active containers on the Char virtual machine.
+
+docker ps
+
+# another answer: " docker container ls"

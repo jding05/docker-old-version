@@ -1,0 +1,17 @@
+********************
+* how_to_docker 22 *
+********************
+
+# 22. Turn Aiur into a slave of the local swarm in which Char is leader 
+#   (the command to take control of Aiur is not requested).
+
+docker-machine ssh Aiur "docker swarm join --token $(docker swarm join-token --quiet worker) $(docker-machine ip Char):2377"
+
+
+# note: 
+# ----------------------------------------------------------------------------
+# 
+# run command to see the swarm worker token --> docker swarm join-token worker -q
+#     command output: SWMTKN-1-31vao6wyei60rqucs1igpby1ql7rwhy6ih2felavuzouyq4zfs-30yb2m1suc73vfjrcxkemvgyg
+# use $() --> to run this first, to get the token first
+# to see if the worker has been added on --> docker node ls

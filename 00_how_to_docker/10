@@ -1,0 +1,36 @@
+********************
+* how_to_docker 10 *
+********************
+
+# 10. Create a volume named hatchery.
+
+docker volume create --name hatchery
+
+
+
+# ----------------------------------------------------------------------------
+
+# note: 
+# ----------------------------------------------------------------------------
+#   to check it run: docker volume ls
+#   other format:    docker volume create --name hatchery
+#   
+#
+#   What are volume in docker?
+#   
+#   A data volume is a specially designated directory within one or more containers that
+#   bypasses Docker’s storage driver and interacts directly with the host file system. 
+#   Data volumes provide several useful features for persistent or shared data:
+
+#   1. Volumes are initialized when a container is created. If the container’s base 
+#   image contains data at the specified mount point, that existing data is copied into 
+#   the new volume upon volume initialization.
+#   2. Data volumes can be shared and reused among containers.
+#   3. Changes to a data volume are made directly to the host filesystem 
+#   (vs. going through the storage driver)
+#   4. Changes to a data volume will not be included when you update an image.
+#   5. Data volumes persist even if the container itself is deleted.
+#   6. Data volumes are designed to persist data, independent of the container’s 
+#   lifecycle. Docker therefore never automatically deletes volumes when you remove 
+#   a container, nor will it "garbage collect" volumes that are no longer referenced 
+#   by a container

@@ -1,0 +1,45 @@
+********************
+* how_to_docker 06 *
+********************
+
+# 6. Launch an nginx container, available on Docker Hub, as a background task. 
+#   It should be named overlord, be able to restart on its own, and have 
+#   its 80 port attached to the 5000 port of Char. You can check that your 
+#   container functions properly by visiting
+#   http://<ip-de-char>:5000 on your web browser.
+
+
+docker run -d --name overlord -p 5000:80 --restart always nginx
+
+
+# -----------------------------------------------------------------------------
+
+# note: Nginx is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, 
+#       and IMAP protocols, as well as a load balancer, HTTP cache, and a web server 
+#       (origin server)
+
+
+# -d is detach, This flag causes Docker to start the container in “detached” mode. 
+#       A simple way to think of this is to think of -d as running the container 
+#       in “the background,” just like any other Unix process.
+
+# if you don't run the command: " docker pull nginx "
+#       it will show unable to find, and pulling from librarry/nginx automatically
+
+# if you don't restart the command: docker run -d --name overlord -p 5000:80 nginx
+# run: " docker-machine ip Char " --> to get the ip address <ip-de-Char>
+# to check, run website: http://192.168.99.100:5000/
+
+
+# ----------------------------------------------------------------------------
+
+# Output:
+# ---------------------------------------------------------------------------
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+f2aa67a397c4: Pull complete
+3c091c23e29d: Pull complete
+4a99993b8636: Pull complete
+Digest: sha256:0fb320e2a1b1620b4905facb3447e3d84ad36da0b2c8aa8fe3a5a81d1187b884
+Status: Downloaded newer image for nginx:latest
+9c1c4b96d663cf46ef2fa33a11850ed17d7b85a75ec6eb690308e406e3c8b503
